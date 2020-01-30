@@ -1,0 +1,25 @@
+{
+  "title": "Todo Partial",
+  "type": "object",
+  "x-tags": [
+    "Todos"
+  ],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "completed": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "circular_reference": {
+      "$ref": "./todo-full.v1.json"
+    }
+  },
+  "required": [
+    "name",
+    "completed"
+  ]
+}

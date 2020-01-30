@@ -1,0 +1,25 @@
+{
+  "title": "User",
+  "type": "object",
+  "x-tags": [
+    "Todos"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The user's full name."
+    },
+    "age": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 150
+    },
+    "deeper": {
+      "$ref": "./level2.v1.json"
+    }
+  },
+  "required": [
+    "name",
+    "age"
+  ]
+}
